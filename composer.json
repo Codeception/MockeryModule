@@ -1,0 +1,20 @@
+{
+    "name": "codeception/mockery-module",
+    "description": "Mockery Module for Codeception",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Michael Bodnarchuk",
+            "email": "davert.php@mailican.com"
+        }
+    ],
+    "require": {
+        "mockery/mockery": "dev-master@dev"
+    },
+    "autoload": {
+        "psr-4":{
+            "Codeception\\Module\\":"codeception-module"
+        }        
+    }
+
+}
