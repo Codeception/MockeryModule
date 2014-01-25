@@ -2,12 +2,12 @@
 
 Integrates [Mockery](https://github.com/padraic/mockery) into Codeception tests.
 
-## Example (`unit.suite.yml`)
+### Example (`unit.suite.yml`)
  
      modules:
         enabled: [Mockery]
 
-## Install
+### Install
 
 add into `composer.json`:
 
