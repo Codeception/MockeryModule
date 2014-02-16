@@ -1,7 +1,8 @@
 {
     "name": "codeception/mockery-module",
     "description": "Mockery Module for Codeception",
-    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Michael Bodnarchuk",
@@ -16,5 +17,4 @@
             "Codeception\\Module\\":"codeception-module"
         }        
     }
-
 }
