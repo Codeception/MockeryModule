@@ -13,8 +13,8 @@
         "mockery/mockery": "@dev"
     },
     "autoload": {
-        "psr-4":{
-            "Codeception\\Module\\":"codeception-module"
+        "psr-4": {
+            "Codeception\\Module\\": "src"
         }        
     }
 }
