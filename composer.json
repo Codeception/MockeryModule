@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "mockery/mockery": "@dev"
+        "mockery/mockery": "~0.8"
     },
     "autoload": {
         "psr-4": {
