@@ -24,8 +24,21 @@ use Codeception\TestCase;
  */
 class Mockery extends Module
 {
+    /** @var bool Run mockery expectations after test or not */
+    private $assert_mocks = true;
+
     public function _after(TestCase $test)
     {
-        \Mockery::close();
+        if ($this->assert_mocks) {
+            \Mockery::close();
+        } else {
+            \Mockery::getContainer()->mockery_close();
+            \Mockery::resetContainer();
+        }
+    }
+
+    public function _failed(TestCase $test, $fail)
+    {
+        $this->assert_mocks = false;
     }
 }
