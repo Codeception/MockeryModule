@@ -12,7 +12,7 @@ use Codeception\TestCase;
  *
  * ## Status
  *
- * * Maintainer: **davert**
+ * * Maintainer: **enumag**
  * * Stability: **stable**
  *
  * ## Example (`unit.suite.yml`)

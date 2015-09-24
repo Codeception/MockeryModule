@@ -7,6 +7,10 @@
         {
             "name": "Michael Bodnarchuk",
             "email": "davert.php@mailican.com"
+        },
+        {
+            "name": "Jáchym Toušek",
+            "email": "enumag@gmail.com"
         }
     ],
     "require": {
@@ -14,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Codeception\\Module\\": "src"
+            "Codeception\\": "src"
         }        
     }
 }
