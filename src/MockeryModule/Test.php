@@ -2,7 +2,7 @@
 
 namespace Codeception\MockeryModule;
 
-use Codeception\TestCase\Test as BaseTest;
+use Codeception\Test\Unit as BaseTest;
 use Mockery;
 
 /**
@@ -16,9 +16,9 @@ use Mockery;
  */
 class Test extends BaseTest
 {
-    protected function tearDown()
+    protected function _tearDown()
     {
-        parent::tearDown();
+        parent::_tearDown();
         Mockery::close();
     }
 }
