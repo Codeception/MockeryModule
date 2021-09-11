@@ -21,3 +21,5 @@ add into `composer.json`:
 ```
 
 This will install Mockery itself + basic module that will invoke mockery verifications after each test.
+
+[Changelog](https://github.com/Codeception/MockeryModule/releases)
