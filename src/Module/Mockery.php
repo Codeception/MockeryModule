@@ -3,7 +3,8 @@
 namespace Codeception\Module;
 
 use Codeception\Module;
-use Codeception\TestCase;
+use Codeception\TestInterface;
+use Exception;
 
 /**
  * Integrates [Mockery](https://github.com/padraic/mockery) into Codeception tests.
@@ -27,7 +28,7 @@ class Mockery extends Module
     /** @var bool Run mockery expectations after test or not */
     private $assert_mocks = true;
 
-    public function _after(TestCase $test)
+    public function _after(TestInterface $test)
     {
         if ($this->assert_mocks) {
             \Mockery::close();
@@ -37,7 +38,7 @@ class Mockery extends Module
         }
     }
 
-    public function _failed(TestCase $test, $fail)
+    public function _failed(TestInterface $test, Exception $fail)
     {
         $this->assert_mocks = false;
     }
